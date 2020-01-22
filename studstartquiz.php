@@ -309,7 +309,7 @@ text-align:center
                                                                 
 								foreach($cat as $c)
 								{
-									echo "<option value=".$c['id'].">".$c['cat_name']."</option>";
+									echo "<option value=".$c['cid'].">".$c['cat_name']."</option>";
                                                                 }
 								
 								?>								

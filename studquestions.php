@@ -253,13 +253,12 @@ text-align:center
         
         <script type="text/javascript">
 	function timeout()
-	{
-		var hours=Math.floor(timeLeft/3600);
-		var minute=Math.floor((timeLeft-(hours*60*60)-30)/60);
-		var second=timeLeft%60;
-		var hrs=checktime(hours);
-		var mint=checktime(minute);
-		var sec=checktime(second);
+	{ var hours=Math.floor(timeLeft/3600);
+            var minute=Math.floor((timeLeft-(hours*60*60)-30)/60);
+            var second=timeLeft%60;
+            var hrs=checktime(hours);
+            var mint=checktime(minute);
+            var sec=checktime(second);
 		if(timeLeft<=0)
 		{
 			clearTimeout(tm);
@@ -359,10 +358,12 @@ text-align:center
               	<div class="col-sm-2"></div>
 	       <div class="col-sm-8">
                    <script type="text/javascript">
-		  var timeLeft=2*1*60;
+		
+              
+          
 		  
 		  </script>
-                  <h6 style="float:right; marign-left:5px"  > Time left</h6>
+                          <h6 style="float:right; marign-left:5px"  > Time left  <script> var timeLeft=1*1*60; </script></h6>
                     <div id="time" style="float:right"> timeout</div>
                     <div class="testscroll">
                 <?php
